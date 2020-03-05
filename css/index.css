@@ -1,0 +1,19 @@
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+p {
+  color: black;
+  font-weight: bolder;
+}
+
+div.jumbotron p.result {
+  font-size: 30px;
+}
+
+div.jumbotron {
+  background-image: url(https://images.vexels.com/media/users/3/143188/isolated/preview/5f44f3160a09b51b4fa4634ecdff62dd---cone-de-dinheiro-by-vexels.png);
+}

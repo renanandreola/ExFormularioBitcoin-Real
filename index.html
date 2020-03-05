@@ -1,49 +1,59 @@
-<!--1) Criar um formulário que converta os valores de real para
-bitcoin e bitcoin para real, esse formulário deve ter um
-radio button com duas opções "Converter para real" e
-"Converter para bitcoin" e um input text para o usuário
-digitar o valor que gostaria de converter. No final deverá
-exibir o resultado da conversão.
-Serviço JSON: https://www.mercadobitcoin.net/api/BTC/ticker/
-<!DOCTYPE html>-->
 <!DOCTYPE html>
 <html lang="ptbr" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Formulário</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
     <div class="container mt-4">
       <form id="bitcoin">
         <div class="row">
           <div class="col-12 mb-4">
-            <h1>Conversor Real / Biticoin</h1>
+            <h1 class="d-flex justify-content-center">Bem vindo ao conversor online</h1>
+            <p class="d-flex justify-content-center">REAL / BITCOIN</p>
           </div>
 
           <div class="col-6">
-            <label>Valor</label>
-            <input type="text" name="" value="" id="value"  data-thousands="." data-decimal="," data-prefix="R$ " class="form-control">
+            <label class="d-flex justify-content-center">DIGITE O VALOR</label>
+            <input type="text" name="" value="" id="value"  data-thousands="." data-decimal="," data-prefix="R$ " class="form-control d-flex justify-content-center">
           </div>
           <br>
+
          <div class="form-group mt-4 ml-2">
             <label class="radio-inline"><input type="radio" id="biticoin" name="money"> Converter para valor em biticoin</label>
             <br>
             <label class="radio-inline"><input type="radio" id="real" name="money"> Converter para valor em real</label></div>
         </div>
-          
+
         <div class="row">
-          <div class="col-12 mt-4">
-            <button type="submit" id="enviar" class="btn btn-success">Enviar</button>
+          <div class="col-12 mt-4 d-flex justify-content-center">
+            <button type="submit" id="enviar" class="btn btn-warning">Enviar</button>
           </div>
         </div>
       </form>
       <div class="jumbotron mt-4">
-          <h1 class="display-6">Resultado</h1>
-          <p id="result"></p>
+          <h1 class="display-6"></h1>
+          <p class="result d-flex justify-content-center" id="result"></p>
       </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="./js/index.js" charset="utf-8"></script>
   </body>
+<br>
+<br>
+<br>
+<br>
+
+  <footer class="page-footer font-small stylish-color-dark pt-4">
+        <div class="text-center text-muted">
+          <!-- Copyright -->
+<div class="footer-copyright text-center py-3">© Desenvolvido por:
+  <a href="https://www.linkedin.com/in/renan-andreolla-a60685190//"> Renan Andreolla</a>
+</div>
+<!-- Copyright -->
+        </div>
+  </footer>
 </html>
